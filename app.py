@@ -21,7 +21,10 @@ collection = db['token_tracking']
 
 # Create a Flask server
 server = Flask(__name__)
-
+# Route to redirect root URL to the dashboard
+@server.route('/')
+def index():
+    return redirect('/dashboard/')
 # Create a Dash app
 app = dash.Dash(__name__, server=server, url_base_pathname='/dashboard/')
 
