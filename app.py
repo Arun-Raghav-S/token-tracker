@@ -113,10 +113,10 @@ def update_graphs(n):
     
     return daily_cost_fig, daily_tokens_fig, daily_requests_fig, weekly_cost_fig, weekly_tokens_fig, weekly_requests_fig
 
-# Route to redirect root URL to the dashboard
-@server.route('/')
-def index():
-    return redirect('/dashboard/')
+# # Route to redirect root URL to the dashboard
+# @server.route('/')
+# def index():
+#     return redirect('/dashboard/')
 
 # Run the server
 if __name__ == '__main__':
