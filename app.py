@@ -74,7 +74,7 @@ app.layout = html.Div(style={'backgroundColor': '#f9f9f9', 'padding': '20px'}, c
         dcc.Graph(id='weekly-tokens', style={'flex': '1', 'margin-right': '10px'}),
         dcc.Graph(id='weekly-requests', style={'flex': '1', 'margin-left': '10px'}),
     ]),
-    dcc.Interval(id='interval-component', interval=1*60000, n_intervals=0)  # Update every minute
+    dcc.Interval(id='interval-component', interval=30*60000, n_intervals=0)  # Update every minute
 ])
 
 # Callback to update the graphs
